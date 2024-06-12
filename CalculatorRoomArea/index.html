@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://result.school/logo-result.school.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Calculator</title>
+    <style>
+      body {
+        background-color: #1c1c1c;
+        color: #f0f0f0;
+      }
+      .container {
+        background-color: #2e2e2e;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #00aaff;
+      }
+      .btn {
+        background-color: #00aaff;
+        color: #ffffff;
+      }
+      .btn:hover {
+        background-color: #007acc;
+      }
+      .text-bg-light {
+        background-color: #333333 !important;
+        color: #f0f0f0 !important;
+      }
+      input {
+        background-color: #444444;
+        color: #f0f0f0;
+        border: 1px solid #555555;
+      }
+      input:focus {
+        background-color: #555555;
+        color: #ffffff;
+        border-color: #00aaff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container w-50 pt-5">
+      <h1>Calculator</h1>
+      <input
+        type="number"
+        class="form-control mb-2"
+        placeholder="Enter the length"
+        id="input1"
+      />
+      <input
+        type="number"
+        class="form-control mb-2"
+        placeholder="Enter the width"
+        id="input2"
+      />
+      <input
+        type="number"
+        class="form-control mb-2"
+        placeholder="Enter the height"
+        id="input3"
+      />
+      <button class="btn btn-outline-info w-100 mb-2" id="submit">
+        Calculate
+      </button>
+      <div class="text-bg-light p-3 text-center">
+        <h4>Area ceiling:</h4>
+        <p id="area-ceiling" class="mb-0"></p>
+      </div>
+      <div class="text-bg-light p-3 text-center">
+        <h4>Area walls:</h4>
+        <p id="area-walls" class="mb-0"></p>
+      </div>
+      <div class="text-bg-light p-3 text-center">
+        <h4>Total area:</h4>
+        <p id="total-area" class="mb-0"></p>
+      </div>
+    </div>
+    <script src="calculatorarea.js"></script>
+  </body>
+</html>
